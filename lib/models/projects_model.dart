@@ -25,25 +25,45 @@ class Project {
   });
 }
 
-final Contacts clarence =
-    Contacts(id: 1, name: 'Clarence', imageUrl: 'assets/Clarence_Gonzales.jpg');
+final Contacts clarence = Contacts(
+    id: 1,
+    name: 'Clarence Gonzales',
+    imageUrl: 'assets/images/Clarence_Gonzales.jpg');
 
-final Contacts cody =
-    Contacts(id: 2, name: 'Cody', imageUrl: 'assets/Cody_Walters.jpg');
+final Contacts cody = Contacts(
+    id: 2, name: 'Cody Walters', imageUrl: 'assets/images/Cody_Walters.jpg');
 
-final Contacts dora =
-    Contacts(id: 0, name: 'Dora', imageUrl: 'assets/Dora_Brown.jpg');
+final Contacts dora = Contacts(
+    id: 0, name: 'Dora Brown', imageUrl: 'assets/images/Dora_Brown.jpg');
 
-final Contacts edwin =
-    Contacts(id: 3, name: 'Edwin', imageUrl: 'assets/Edwin_Holmes.jpg');
+final Contacts edwin = Contacts(
+    id: 3, name: 'Edwin Holmes', imageUrl: 'assets/images/Edwin_Holmes.jpg');
 
-final Contacts kristen =
-    Contacts(id: 5, name: 'Kristen', imageUrl: 'assets/Kristen_Stevens.jpg');
+final Contacts kristen = Contacts(
+    id: 5,
+    name: 'Kristen Stevens',
+    imageUrl: 'assets/images/Kristen_Stevens.jpg');
 
-final Contacts olivia =
-    Contacts(id: 6, name: 'Olivia', imageUrl: 'assets/Olivia_Cruz.jpg');
+final Contacts olivia = Contacts(
+    id: 6, name: 'Olivia Cruz', imageUrl: 'assets/images/Olivia_Cruz.jpg');
 
-List<Project> projects = [
+// Groups
+
+// here I added up groups as contacts but for the future groups will have their own type with different
+// additional info including (number of members, admin users, mute / unmute ...)
+
+final Contacts technologyBoxs = Contacts(
+    id: 7,
+    name: 'Technology Boxs',
+    imageUrl: 'assets/images/Technology_Box.jpg');
+
+final Contacts creedorian = Contacts(
+    id: 8, name: 'Creedorian', imageUrl: 'assets/images/credorian.png');
+
+final Contacts subZeroSoftware = Contacts(
+    id: 9, name: 'SubZero Software', imageUrl: 'assets/images/subZero.jpg');
+
+final List<Project> projects = [
   Project(
     id: 1,
     name: 'Blok Games Project',
