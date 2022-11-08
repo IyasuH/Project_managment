@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:project_managment/models/projects_model.dart';
+import 'package:project_managment/screens/daily_tasks.dart';
+import 'package:project_managment/screens/messages.dart';
+import 'package:project_managment/screens/new_project.dart';
 import 'package:project_managment/widgets/home_tab.dart';
 
 import 'my_profile.dart';
@@ -400,11 +403,11 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentTab = 0;
   String today = DateFormat("MMMM dd, EEEEE").format(DateTime.now());
   final tabs = [
-    Center(child: HomeTab()),
-    Center(child: Text('Daily Tasks')),
-    Center(child: Text('New Project')),
-    Center(child: Text('My Message')),
-    Center(child: MyProfile()),
+    HomeTab(),
+    DailyTasks(),
+    NewProject(),
+    Message(),
+    MyProfile(),
   ];
 
   @override

@@ -25,7 +25,7 @@ class _MyProfileState extends State<MyProfile> {
                   'My Profile',
                   style: TextStyle(
                     fontSize: 19,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w800,
                   ),
                 ),
                 const Icon(Icons.qr_code_scanner_rounded)
