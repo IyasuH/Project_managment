@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:image_stack/image_stack.dart';
 import 'package:intl/intl.dart';
 
+// Let's get two dates :
+DateTime now = DateTime.now();
+DateTime date = DateTime(now.year, now.month, now.day);
+
 class DailyTasks extends StatefulWidget {
   const DailyTasks({super.key});
 
@@ -194,7 +198,7 @@ class _DailyTasksState extends State<DailyTasks> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -278,7 +282,7 @@ class _DailyTasksState extends State<DailyTasks> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -378,7 +382,7 @@ class _DailyTasksState extends State<DailyTasks> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Timeline',
                     style: TextStyle(
                       fontSize: 18,
@@ -387,7 +391,7 @@ class _DailyTasksState extends State<DailyTasks> {
                   ),
                   Text(
                     thisMonth,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.bold,
                     ),
@@ -396,7 +400,7 @@ class _DailyTasksState extends State<DailyTasks> {
               ),
             ],
           ),
-        )
+        ),
       ]),
     );
   }
